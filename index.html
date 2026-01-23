@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landingPage" class="page active">
+        <div class="landing-content">
+            <p class="intro-text">
+                In 2023, the Heritage Foundation published Project 2025 and the "Mandate For Leadership": 
+            </p>
+            <p class="intro-text">
+                A 900+ page policy blueprint for reshaping the U.S. federal government under conservative ideology. It covers immigration, reproductive rights, LGBTQ+ protections, law enforcement, economic policy, and public assistance—consolidating executive power and outlining a vision for governance that would fundamentally reshape American democracy. 
+                <br>
+            </p>
+            <p class="intro-text">
+                The document is publicly available. 
+                <br>
+                Read at typical speed, it takes approximately 41 hours.
+            </p>
+            <button id="enterBtn" class="enter-button">Enter →</button>
+        </div>
+    </div>
+
+    <!-- Viewer Page -->
+    <div id="viewerPage" class="page">
+        <div class="top-controls">
+            <div class="left-controls">
+                <button id="infoBtn" class="control-button">Info</button>
+                <button id="muteBtn" class="control-button">Mute</button>
+            </div>
+            
+            <div class="center-time">
+                <span id="currentTime">0:00</span> / <span id="totalTime">41:01:51</span> 
+                <br> <span style="display: block; text-align: center">[ 1.710x ]</span>
+            </div>
+            
+            <div class="right-time">
+                <span id="clockTime">--:--</span>
+            </div>
+        </div>
+        
+        <div id="container"></div>
+        
+        <audio id="audio"></audio>
+    </div>
+
+    <!-- Info Page -->
+    <div id="infoPage" class="page">
+        <button id="backBtn" class="info-button">Back</button>
+        
+        <div class="info-content">
+            <div class="info-columns">
+                <div class="info-left">
+                    <p class="info-paragraph">
+                        The Document:
+                        <br><br>
+                        In April 2023, the Heritage Foundation published Project 2025, also known as the 2025 Presidential Transition Project. Meant to reshape the U.S. federal government by consolidating executive power under right-wing policies, the document provides a detailed roadmap for transforming the federal government and implementing conservative policies in a future Republican presidential administration.
+                        <br><br>
+                        One of the central pillars, an over 900 page policy document referred to as the "Mandate for Leadership 2025," outlines the restructuring of government departments, policies on immigration and borders, abortion rights, safeguards for LGBTQ+ people, law enforcement and policing, economic oversight, and public assistance programs. In total, consolidating power within the executive branch, and promoting traditional conservative ideology.
+                    </p>
+                </div>
+                
+                <div class="info-right">
+                    <p class="info-paragraph">
+                        The Project:
+                        <br><br>
+                        This piece compresses the 41-hour reading into 24 hours, synced to the clock—advancing continuously throughout the day whether viewed or not, mirroring how policy itself unfolds independent of public awareness or consent. Each moment corresponds to a specific position in the document; arriving at any given time means entering mid-sentence, mid-thought, after decisions have already been articulated, beyond the control of its viewer.
+                    </p>
+
+                    <p class="info-paragraph">
+                        This structural indifference makes visible what is already true: scale itself functions as a barrier to democratic participation. Project 2025 is technically transparent, but its length ensures it remains functionally inaccessible to most citizens. Like terms and conditions, it operates as a document we're expected to consent to and live under, but that resists understanding by design—governance repackaged as a user agreement we never truly have the option to decline. 
+                    </p>
+
+                    <p class="info-paragraph">
+                        The 24-hour duration reframes the document not as information to be absorbed, but as time to be spent. An endurance revealing the gap between nominal transparency and actual accessibility. In an ever-accelerating world, who has 24 hours to give to civic participation? And if we did, would it matter? The piece offers no answer, only the document itself: running, illegible, and indifferent to your listening.
+                    </p>
+                </div>
+            </div>
+
+            <div class="resources">
+                <h2>Resources</h2>
+                <p>For more information about Project 2025 and ways to engage:</p>
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

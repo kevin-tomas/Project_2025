@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --top-controls-font-size: 28px;
+}
+
+body {
+    background: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    transition: background-color 0.3s ease;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+body.inverted {
+    background: #000000;
+}
+
+/* Page System */
+.page {
+    display: none;
+    min-height: 100vh;
+}
+
+.page.active {
+    display: flex;
+}
+
+/* Landing Page */
+#landingPage {
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.landing-content {
+    max-width: 50rem;
+}
+
+.intro-text {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: #121212;
+}
+
+.enter-button {
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+    background: transparent;
+    border: 0px solid #666;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.enter-button:hover {
+    color: #b2b2b2;
+}
+
+/* Viewer Page */
+#viewerPage {
+    position: relative;
+    overflow: hidden;
+}
+
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.word {
+    position: absolute;
+    color: #121212;
+    font-size: 80px;
+    font-weight: normal;
+    text-align: center;
+    transition: opacity 0.8s ease-out, color 0.3s ease;
+}
+
+body.inverted .word {
+    color: #ffffff;
+}
+
+.word.active {
+    opacity: 1;
+}
+
+/* Top Controls */
+.top-controls {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 24px;
+    z-index: 50;
+    color: #383838;
+    transition: color 0.3s ease;
+}
+
+body.inverted .top-controls {
+    color: #cccccc;
+}
+
+.left-controls {
+    display: flex;
+    gap: 12px;
+}
+
+.center-time {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: var(--top-controls-font-size);
+}
+
+.right-time {
+    font-size: var(--top-controls-font-size);
+}
+
+.control-button {
+    background: transparent;
+    color: #383838;
+    border: none;
+    padding: 0px 16px;
+    font-size: var(--top-controls-font-size);
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+body.inverted .control-button {
+    color: #cccccc;
+}
+
+.control-button:hover {
+    color: #000000;
+}
+
+body.inverted .control-button:hover {
+    color: #ffffff;
+}
+
+/* Info Page */
+#infoPage {
+    padding: 5rem 0rem;
+    padding-top: 24px;
+    overflow-y: auto;
+}
+
+#infoPage .info-button {
+    position: fixed;
+    top: 24px;
+    left: 24px;
+    z-index: 50;
+    padding: 0px 16px;
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    background: transparent;
+    border: none;
+    color: #121212;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+body.inverted #infoPage .info-button {
+    color: #cccccc;
+}
+
+#infoPage .info-button:hover {
+    color: #000000;
+}
+
+body.inverted #infoPage .info-button:hover {
+    color: #ffffff;
+}
+
+.info-content {
+    max-width: 78.5rem;
+    margin-left: 8rem;
+
+    color: #121212;
+    transition: color 0.3s ease;
+}
+
+body.inverted .info-content {
+    color: #e0e0e0;
+}
+
+.info-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.info-left,
+.info-right {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .info-columns {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+.info-paragraph {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.resources {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ccc;
+}
+
+body.inverted .resources {
+    border-top-color: #444;
+}
+
+.resources h2 {
+    font-size: 28px;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.resources p {
+    font-size: 28px;
+    margin-bottom: 1rem;
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources li {
+    margin-bottom: 0.5rem;
+    font-size: 28px;
+}
+
+.resources a {
+    color: #121212;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+body.inverted .resources a {
+    color: #e0e0e0;
+}
+
+.resources a:hover {
+    text-decoration: none;
+}
