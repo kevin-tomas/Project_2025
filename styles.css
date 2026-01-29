@@ -16,6 +16,7 @@ body {
 
 body.no-scroll {
     overflow: hidden;
+    overflow-x: hidden;
 }
 
 body.inverted {
@@ -30,6 +31,15 @@ body.inverted {
 
 .page.active {
     display: flex;
+}
+
+hr {
+    position: relative;
+    left: -8rem;
+    width: 100vw;
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid #000000;
 }
 
 /* Landing Page */
@@ -230,9 +240,8 @@ body.inverted .info-content {
 }
 
 .resources {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid #ccc;
+    margin-top: 1rem;
+    padding-top: 0rem;
 }
 
 body.inverted .resources {
