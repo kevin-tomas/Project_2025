@@ -12,7 +12,10 @@ body {
     background: #ffffff;
     font-family: 'Times New Roman', Times, serif;
     transition: background-color 0.3s ease;
+    font-feature-settings: "liga" 1;
+    text-rendering: optimizeLegibility;
 }
+
 
 body.no-scroll {
     overflow: hidden;
@@ -238,6 +241,7 @@ body.inverted .info-content {
     line-height: 1.2;
     margin-bottom: 1.5rem;
 }
+
 
 .resources {
     margin-top: 1rem;
